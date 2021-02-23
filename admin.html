@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div id="cabeceraPc">
+        <!-- Esta va a ser la cabecera -->
+        <img src="./imagenes/logo.png" id="logoPc">
+        <h1 id="tituloPc">CIFP McCartney</h1>
+        <p>Usuario_administrador</p>
+        <a href=""><img src="./imagenes/usuario.png" id="usuarioPc"></a>
+        <a href=""><img src="./imagenes/ayuda.png" id="ayudaPc"></a>
+        <a href="index.html"><p>Inicio / </p></a>
+        <a href="admin.html"><p>administrador</p></a>
+        
+    </div>
+
+    <div id="cuerpoPc">
+
+        <div >
+            <h3>Nuevo profesor</h3>
+            <form action="../form-result.php" target="_blank">
+                
+                <p>Ingresa el nombre: <input type="text" name="nombre"></p>
+                <p>Ingresa apellidos: <input type="text" name="apellidos"></p>
+                <p>Módulo: <input type="text" name="modulo"></p>
+                <p>ID: <input type="text" name="id"></p>
+                
+                <input type="submit" value="Añadir cambios">
+            </form>
+        </div>
+
+        <div>
+            <h3>Modificar profesor</h3>
+            <form action="../form-result.php" target="_blank"></form>
+                <p>
+                Ingresa el ID: <input type="text" name="id">
+                </p>
+                <input type="submit" value="Cambiar un módulo">
+                <input type="submit" value="Eliminar">
+            </form>
+        </div>
+        
+
+        <div>
+            <h3>Nuevo alumno</h3>
+            <form action="../form-result.php" target="_blank"></form>
+                
+                <p>Ingresa el nombre: <input type="text" name="nombre"></p>
+                <p>Ingresa apellidos: <input type="text" name="apellidos"></p>
+                <p>Ingresa curso: <input type="text" name="curso"></p>
+                <p>Ingresa el ID: <input type="text" name="id"></p>
+                
+                <input type="submit" value="Añadir cambios">
+            </form>
+        </div>
+
+        <div>
+            <h3>Modificar alumno</h3>
+            <form action="../form-result.php" target="_blank"></form>
+                <p>
+                    Ingresa el ID: <input type="text" name="nombre">
+                </p>
+                <input type="submit" value="Cambiar cursos / módulos">
+                <input type="submit" value="Eliminar">
+                </form>
+        </div>
+        <input type="submit" value="Comprobar todos los módulos">   
+    </div>
+
+    <div id="footerPc">
+        <img src="./imagenes/logo.png" id="logoPc">
+        <h1 id="titulo2Pc">CIFP McCartney</h1>
+        <div id="infoPiePc"> 
+            <a href="index.html"><p>Incio</p></a>
+            <p> | </p>
+            <a href=""><p>Ayuda</p></a>
+            <p> | </p>
+            <a href=""><p>contacto</p></a>
+        </div>
+    </div>
+
+
+    <!-- HTML de la versión móvil -->
+    <div id="cabeceraM">
+        <!-- Esta va a ser la cabecera -->
+        <a href="index.html"><img src="./imagenes/logo.png" id="logoM"></a>
+        <p>Usuario_administrador</p>
+        <a href=""><img src="./imagenes/usuario.png" id="usuarioM"></a>
+        <a href=""><img src="./imagenes/ayuda.png" id="ayudaM"></a>
+    </div>
+
+    <div id="cuerpoM">
+        
+        <div >
+            <h3>Nuevo profesor</h3>
+            <form action="../form-result.php" target="_blank">
+                
+                <p>Ingresa el nombre: <input type="text" name="nombre"></p>
+                <p>Ingresa apellidos: <input type="text" name="apellidos"></p>
+                <p>Módulo: <input type="text" name="modulo"></p>
+                <p>ID: <input type="text" name="id"></p>
+                
+                <input type="submit" value="Añadir cambios">
+            </form>
+        </div>
+
+        <div>
+            <h3>Modificar profesor</h3>
+            <form action="../form-result.php" target="_blank"></form>
+                <p>
+                Ingresa el ID: <input type="text" name="id">
+                </p>
+                <input type="submit" value="Cambiar un módulo">
+                <input type="submit" value="Eliminar">
+            </form>
+        </div>
+        
+
+        <div>
+            <h3>Nuevo alumno</h3>
+            <form action="../form-result.php" target="_blank"></form>
+                
+                <p>Ingresa el nombre: <input type="text" name="nombre"></p>
+                <p>Ingresa apellidos: <input type="text" name="apellidos"></p>
+                <p>Ingresa curso: <input type="text" name="curso"></p>
+                <p>Ingresa el ID: <input type="text" name="id"></p>
+                
+                <input type="submit" value="Añadir cambios">
+            </form>
+        </div>
+
+        <div>
+            <h3>Modificar alumno</h3>
+            <form action="../form-result.php" target="_blank"></form>
+                <p>
+                    Ingresa el ID: <input type="text" name="nombre">
+                </p>
+                <input type="submit" value="Cambiar cursos / módulos">
+                <input type="submit" value="Eliminar">
+                </form>
+        </div>
+        <input type="submit" value="Comprobar todos los módulos">
+    </div>
+</body>
+</html>

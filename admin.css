@@ -1,0 +1,172 @@
+/* Estilo para móvil */
+@media screen and (max-width: 500px){
+    #cabeceraPc, #titulo2Pc, #tituloPc, #logoPc, #usuarioPC, #ayudaPc, #cuerpoPc, #footerPc, #logoPc, #infoPiePc{
+        display:none;
+    }
+    body{
+        margin:0%;
+        font: bold 90% monospace;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    }
+
+    /* estilos de la cabecera */
+    #cabeceraM{
+        background-color: #BE1F01;
+        display:grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
+        align-items: center;
+        border-bottom: 2px black solid;
+        grid-area: header;
+    }
+    
+    #logoM{
+        display: inline;
+        width: 70px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    #usuarioM{
+        display: inline;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    #calendarioM{
+        display: inline;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    #ayudaM{
+        display: inline;
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+    }
+
+    /* Estilos del cuerpo */
+    #cuerpoM{
+        display:grid;
+        grid-area: main;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 70px;
+        grid-column-gap: 20px;
+        justify-content: start;
+    }
+
+    #cuerpoM div{
+        border: 2px black solid;
+        padding: 15px;
+        margin: 20px;
+        height: 200px;
+        width: 300px;
+    }
+
+    #cuerpoM div h3{
+        color: #BE1F01;
+    }
+}
+
+/* Estilo para ordenador */
+@media screen and (min-width: 500px){
+    #cabeceraM, #logoM, #usuarioM, #ayudaM, #cuerpoM{
+        display: none;
+    }
+
+    body{
+        margin:0%;
+        font: bold 90% monospace;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    }
+    /* Elementos de la cabecera */
+    #cabeceraPc{
+        padding-left:15px;
+        background-color: #BE1F01;
+        display:grid;
+        grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
+        grid-area: header;
+        align-items: center;
+        border-bottom: 2px black solid;
+    }
+
+    #logoPc{
+        display: inline;
+        width: 70px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    #usuarioPc{
+        display: inline;
+        
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    #ayudaPc{
+        display: inline;
+        
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    /* Elementos del cuerpo */
+    #cuerpoPc{
+        display:grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        padding: 70px;
+        grid-column-gap: 20px;
+    }
+
+    #cuerpoPc div{
+        border: 2px black solid;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    #cuerpoPc div h3{
+        color: #BE1F01;
+    }
+
+    /* Elementos del footer */
+    #footerPc{
+        padding:15px;
+        grid-area:footer;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        align-items: top;
+        background-color: #BE1F01;
+        justify-content: space-between;
+        border-top: 2px black solid;
+
+        position:absolute;
+        right: inherit;
+        bottom:0;
+        width: 100%;
+        height: 40px;
+    }
+
+    #infoPiePc{
+        display:grid;
+        grid-template-columns: 50px 20px 50px 20px 50px 20px;
+    }
+}
